@@ -90,9 +90,9 @@ module.exports = class PluginName extends Plugin {
             }
         })
     }
-    pluginWillUnload() {
-        // Unloading Here
-    }
+  pluginWillUnload() {
+      powercord.api.commands.unregisterCommand('minesweeper'); 
+  }
 }
 
 function getMinesweeper(rows = 5, columns = 5, mines = 8) {
