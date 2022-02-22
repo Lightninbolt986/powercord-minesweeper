@@ -33,7 +33,7 @@ const {
 const {
     saveAccountChanges
 } = getModule(["saveAccountChanges", "accountDetailsInit"], false);
-module.exports = class PluginName extends Plugin {
+module.exports = class Powercord_Minesweeper extends Plugin {
     startPlugin() {
         powercord.api.commands.registerCommand({
             command: 'minesweeper',
